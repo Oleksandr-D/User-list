@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 107, 107));
+}
+
+.conteiner {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form,
+.tableConteiner {
+    width: 450px;
+    height: 400px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 2px solid lightgray;
+    outline: none;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    border: 2px solid lightgray;
+}
+
+input[type="submit"]:disabled {
+    color: limegreen;
+    background-color: white;
+    border: 2px solid lightgreen;
+}
+
+input[value="Edit user"]:enabled,
+input[name="add_user"]:enabled {
+    background-color: limegreen;
+    color: white;
+}
+
+input[value="Edit user"]:enabled:hover,
+input[name="add_user"]:enabled:hover {
+    width: 80px;
+    background-color: rgb(47, 184, 47);
+    border: 2px solid lightgreen;
+    box-shadow: 0 0 5px 5px lime;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border: 2px solid lightskyblue;
+    box-shadow: 0 0 5px 5px lightblue;
+    background-color: white;
+}
+
+.addUser,
+.editUser,
+.edit,
+.delete {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.addUser,
+.editUser {
+    width: 80px;
+    height: 40px;
+}
+
+.edit {
+    background-color: orange;
+}
+
+.edit:hover {
+    box-shadow: 0 0 4px 4px rgb(194, 194, 194);
+}
+
+.delete {
+    background-color: red;
+}
+
+.delete:hover {
+    box-shadow: 0 0 4px 4px rgb(194, 194, 194);
+}
+
+tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+th,
+td {
+    padding: 4px;
+}
+
+.hide {
+    display: none;
+}
